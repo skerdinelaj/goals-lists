@@ -1,4 +1,5 @@
 import { ReactNode } from "react"
+import Button from "../ui/Button"
 
 type CourseGoalProps = {
     title: string,
@@ -15,7 +16,7 @@ export default function CourseGoal({title, id, handleDelete, children}: CourseGo
             <h2>{title}</h2>
             {children}
         </div>
-        <button onClick={()=>handleDelete(id)} >Delete</button>
+        <Button onClick={()=>handleDelete(id)} >Delete</Button>
     </article>
   )
 }
